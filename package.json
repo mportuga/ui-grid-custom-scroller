@@ -1,0 +1,46 @@
+{
+  "name": "ui-grid-custom-scroller",
+  "version": "1.0.0",
+  "description": "A custom scroller for UI-Grid that takes over default scrolling logic on touch events.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mportuga/ui-grid-custom-scroller.git"
+  },
+  "keywords": [
+    "angular",
+    "scroller",
+    "ui-grid"
+  ],
+  "author": "Marcelo S. Portugal <marcelo.quarion@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mportuga/ui-grid-custom-scroller/issues"
+  },
+  "homepage": "https://github.com/mportuga/ui-grid-custom-scroller#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg",
+      "post-merge": "npm install",
+      "post-rewrite": "npm install"
+    }
+  },
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-grid": "^4.0.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.0",
+    "cz-conventional-changelog": "^1.2.0",
+    "validate-commit-msg": "^2.8.2"
+  }
+}
