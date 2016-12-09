@@ -1,19 +1,16 @@
-(function() {
-	'use strict';
-
-	/**
-	 *  @ngdoc directive
-	 *  @name ui.grid.customScrolling.directive:uiGridCustomScrolling
-	 *  @element div
-	 *  @restrict EA
-	 *
-	 *  @description Updates the grid to use the gridScroller instead of the jquery scroll event
-	 *
-	 *  @example
-	 <example module="app">
-	 <file name="app.js">
-	 var app = angular.module('app', ['ngTouch', 'ui.grid', 'ui.grid.pinning', 'ui.grid.customScrolling']);
-	 app.controller('MainCtrl', ['$scope', '$http', '$log', function ($scope, $http, $log) {
+/**
+ *  @ngdoc directive
+ *  @name ui.grid.customScroller.directive:customScroller
+ *  @element div
+ *  @restrict EA
+ *
+ *  @description Updates the grid to use the gridScroller instead of the jquery scroll event
+ *
+ *  @example
+ <example module="app">
+ <file name="app.js">
+ var app = angular.module('app', ['ngTouch', 'ui.grid', 'ui.grid.pinning', 'ui.grid.customScrolling']);
+ app.controller('MainCtrl', ['$scope', '$http', '$log', function ($scope, $http, $log) {
       $scope.gridOptions = {};
       $scope.gridOptions.columnDefs = [
         { name:'id', width:50, enablePinning:false },
@@ -36,33 +33,32 @@
           $scope.gridOptions.data = data;
         });
     }]);
-	 </file>
-	 <file name="index.html">
-	 <div ng-controller="MainCtrl">
-	 <div ui-grid="gridOptions" class="grid" ui-grid-pinning ui-grid-custom-scrolling></div>
-	 </div>
-	 </file>
-	 </example>
-	 */
-	angular
-		.module('ui.grid.customScroller')
-		.directive('uiGridCustomScroller', ['uiGridScroller',
-			function(uiGridScroller) {
-				return {
-					restrict: 'A',
-					require: 'uiGrid',
-					scope: false,
-					compile: function() {
-						return {
-							pre: function($scope, $elm, $attrs, uiGridCtrl) {
-								// initializes custom scroller to be the gridScroller when options exist
-								if (uiGridCtrl.grid && uiGridCtrl.grid.options) {
-									uiGridCtrl.grid.options.customScroller = uiGridScroller;
-								}
-							},
-							post: angular.noop
-						};
-					}
-				};
-			}]);
-})();
+ </file>
+ <file name="index.html">
+ <div ng-controller="MainCtrl">
+ <div ui-grid="gridOptions" class="grid" ui-grid-pinning ui-grid-custom-scrolling></div>
+ </div>
+ </file>
+ </example>
+ */
+angular
+	.module('ui.grid.customScroller')
+	.directive('uiGridCustomScroller', ['uiGridScroller',
+		function(uiGridScroller) {
+			return {
+				restrict: 'A',
+				require: 'uiGrid',
+				scope: false,
+				compile: function() {
+					return {
+						pre: function($scope, $elm, $attrs, uiGridCtrl) {
+							// initializes custom scroller to be the gridScroller when options exist
+							if (uiGridCtrl.grid && uiGridCtrl.grid.options) {
+								uiGridCtrl.grid.options.customScroller = uiGridScroller;
+							}
+						},
+						post: angular.noop
+					};
+				}
+			};
+		}]);

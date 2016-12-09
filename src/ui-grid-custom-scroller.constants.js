@@ -1,15 +1,12 @@
-(function() {
-	'use strict';
-
-	/**
-	 *  @ngdoc object
-	 *  @name ui.grid.customScroller.constant:uiGridScrollerConstants
-	 *
-	 *  @description Constants for use with the  uiGridScroller
-	 */
-	angular
-		.module('ui.grid.customScroller')
-		.constant('uiGridScrollerConstants', {
+/**
+ *  @ngdoc object
+ *  @name ui.grid.customScroller.constant:uiGridScrollerConstants
+ *
+ *  @description Constants for use with the  uiGridScroller
+ */
+angular
+	.module('ui.grid.customScroller')
+	.constant('uiGridScrollerConstants', {
 		/**
 		 * @ngdoc object
 		 * @name deceleration
@@ -39,4 +36,3 @@
 			POINTER: 3
 		}
 	});
-})();
