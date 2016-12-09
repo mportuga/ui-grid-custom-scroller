@@ -44,6 +44,7 @@
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "^2.0.0",
+    "grunt-jscs": "^3.0.1",
     "load-grunt-tasks": "^3.5.2",
     "validate-commit-msg": "^2.8.2"
   }

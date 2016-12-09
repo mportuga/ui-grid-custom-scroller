@@ -5,9 +5,10 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		concat: require('./grunt/concat')(),
-		uglify: require('./grunt/uglify')()
+		jscs: require('./grunt/jscs'),
+		concat: require('./grunt/concat'),
+		uglify: require('./grunt/uglify')
 	});
 
-	grunt.registerTask('default', ['concat', 'uglify']);
+	grunt.registerTask('default', ['jscs', 'concat', 'uglify']);
 };
