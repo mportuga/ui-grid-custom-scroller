@@ -1,10 +1,12 @@
-describe('ui.grid.customScrolling', function() {
-  describe('uiGridCustomScrolling Directive', function() {
+describe('ui.grid.customScroller', function() {
+  'use strict';
+
+  describe('uiGridCustomScroller Directive', function() {
     var $compile, $rootScope, $scope, elm;
 
     beforeEach(function() {
       module('ui.grid');
-      module('ui.grid.customScrolling');
+      module('ui.grid.customScroller');
 
       inject(function (_$rootScope_, _$compile_) {
         $rootScope = _$rootScope_;
@@ -16,7 +18,7 @@ describe('ui.grid.customScrolling', function() {
         data: [{ name: 'Bob' }, {name: 'Mathias'}, {name: 'Fred'}]
       };
 
-      elm = angular.element('<div ui-grid="gridOpts" ui-grid-custom-scrolling></div>');
+      elm = angular.element('<div ui-grid="gridOpts" ui-grid-custom-scroller></div>');
 
       $compile(elm)($scope);
       $scope.$digest();
