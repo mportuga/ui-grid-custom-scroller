@@ -11,7 +11,6 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('build', ['concat', 'uglify']);
-	grunt.registerTask('test', ['jscs', 'build']);
 
-	grunt.registerTask('default', ['test', 'build']);
+	grunt.registerTask('default', ['jscs', 'build']);
 };
