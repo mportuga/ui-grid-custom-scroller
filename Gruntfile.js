@@ -10,5 +10,8 @@ module.exports = function(grunt) {
 		uglify: require('./grunt/uglify')
 	});
 
-	grunt.registerTask('default', ['jscs', 'concat', 'uglify']);
+	grunt.registerTask('build', ['concat', 'uglify']);
+	grunt.registerTask('test', ['jscs', 'build']);
+
+	grunt.registerTask('default', ['test', 'build']);
 };
