@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+  - 4.2.1
+
+before_script:
+  - sh -e /etc/init.d/xvfb start
+  - npm install --quiet -g grunt-cli
+  - npm install
+
+script: grunt
