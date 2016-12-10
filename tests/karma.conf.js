@@ -82,12 +82,4 @@ module.exports = function(config) {
 		browserDisconnectTolerance: 2,
 		browserNoActivityTimeout: 45000 // 20000,
 	});
-
-	if (process.env.TRAVIS) {
-		// Debug logging into a file, that we print out at the end of the build.
-		config.loggers.push({
-			type: 'file',
-			filename: process.env.LOGS_DIR + '/' + ('karma.log')
-		});
-	}
 };
