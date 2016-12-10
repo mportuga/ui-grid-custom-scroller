@@ -1,9 +1,9 @@
 # ui-grid-custom-scroller
 
-[![Build Status](https://travis-ci.org/mportuga/ui-grid-custom-scroller.svg?branch=master)](https://travis-ci.org/mportuga/ui-grid-custom-scroller)
-[![GitHub issues](https://img.shields.io/github/issues/mportuga/ui-grid-custom-scroller.svg?style=plastic)](https://github.com/mportuga/ui-grid-custom-scroller/issues)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mportuga/ui-grid-custom-scroller/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/mportuga/ui-grid-custom-scroller.svg?branch=master?style=flat-square)](https://travis-ci.org/mportuga/ui-grid-custom-scroller)
+[![GitHub issues](https://img.shields.io/github/issues/mportuga/ui-grid-custom-scroller.svg?style=flat-square)](https://github.com/mportuga/ui-grid-custom-scroller/issues)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/mportuga/ui-grid-custom-scroller/blob/master/LICENSE)
 
 > A custom scroller for UI-Grid that takes over default scrolling logic in order to ensure that grid scrolling works without a lag on devices.
 
