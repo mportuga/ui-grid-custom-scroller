@@ -14,5 +14,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('test', ['jscs', 'karma:unit']);
 	grunt.registerTask('build', ['concat', 'uglify']);
 
-	grunt.registerTask('default', ['clean', 'test', 'build', 'ngdocs']);
+	grunt.registerTask('default', ['clean', 'test', 'build', 'ngdocs', 'copy:icons']);
+	grunt.registerTask('dev', ['default', 'connect', 'watch']);
 };

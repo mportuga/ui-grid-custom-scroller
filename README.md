@@ -22,7 +22,7 @@ Fork this repo and run the following commands to get started:
 ```sh
 npm install
 npm install -g grunt-cli
-grunt
+grunt dev
 ```
 
 After that, just open a [pull request](https://github.com/mportuga/ui-grid-custom-scroller/pulls) and I will review it when I can!
