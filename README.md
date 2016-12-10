@@ -1,5 +1,6 @@
 # ui-grid-custom-scroller
 
+[![npm version](https://img.shields.io/npm/v/ui-grid-custom-scroller.svg?style=flat-square)](https://www.npmjs.com/package/ui-grid-custom-scroller)
 [![Build Status](https://img.shields.io/travis/mportuga/ui-grid-custom-scroller/master.svg?style=flat-square)](https://travis-ci.org/mportuga/ui-grid-custom-scroller)
 [![GitHub issues](https://img.shields.io/github/issues/mportuga/ui-grid-custom-scroller.svg?style=flat-square)](https://github.com/mportuga/ui-grid-custom-scroller/issues)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
