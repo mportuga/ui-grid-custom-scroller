@@ -13,10 +13,6 @@
 npm install ui-grid-custom-scroller --save
 ```
 
-## API Documentation
-
-[View API Documentation](http://htmlpreview.github.io/?https://github.com/mportuga/ui-grid-custom-scroller/blob/master/docs/index.html)
-
 ## Contributing
 
 Feel free to contribute!
