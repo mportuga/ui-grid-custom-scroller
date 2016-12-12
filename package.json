@@ -1,6 +1,6 @@
 {
   "name": "ui-grid-custom-scroller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A custom scroller for UI-Grid that takes over default scrolling logic on touch events.",
   "main": "index.js",
   "directories": {
