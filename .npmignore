@@ -1,0 +1,10 @@
+.idea/
+tmp/
+config/
+coverage/
+docs/
+node_modules/
+tests/
+.jscs.json
+.travis.yml
+Gruntfile.js
