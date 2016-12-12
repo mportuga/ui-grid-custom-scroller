@@ -8,3 +8,4 @@ tests/
 .jscs.json
 .travis.yml
 Gruntfile.js
+npm-debug.log

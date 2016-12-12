@@ -1,6 +1,6 @@
 {
   "name": "ui-grid-custom-scroller",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A custom scroller for UI-Grid that takes over default scrolling logic on touch events.",
   "main": "index.js",
   "directories": {
@@ -10,7 +10,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git commit -am \"chore(CHANGELOG): Updating Changelog\"",
     "test": "grunt",
     "release": "npm run changelog && git push && git push --tags && npm publish ./",
-    "postversion": "npm run release"
+    "postversion": "npm test && npm run release"
   },
   "repository": {
     "type": "git",
